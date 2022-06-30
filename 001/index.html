@@ -9,19 +9,11 @@
     <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
     <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
   </head>
-  <style>
-    div.container{
-    
-    
-    background: #68d4fd;
-    border-radius: 20px;
-}
-  </style>
   <body>
     <!-- <model-viewer> HTML element -->
-    <model-viewer bounds="tight" enable-pan src="kl_002.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1">
+    <model-viewer bounds="tight" enable-pan src="kl_001.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1">
       <div class="progress-bar hide" slot="progress-bar">
-         
+          <div class="update-bar"></div>
       </div>
       <button slot="ar-button" id="ar-button">
           View in your space
